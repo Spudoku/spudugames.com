@@ -1,0 +1,58 @@
+body {
+    background-image: url("decor_images/autumn\ trail.jpg");
+    background-size: 100%;
+    
+}
+
+#top-container {
+    text-align: center;
+    background-color: purple;
+
+}
+
+#left-container {
+    text-align: left;
+    background-color:red;
+    width: 10%;
+
+}
+#middle-container {
+    text-align: left;
+    background-color:rgb(209, 190, 252);
+
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    padding: 30px;
+
+}
+
+.body_text {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#bottom-container {
+    text-align: left;
+    
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    padding: 30px;
+
+}
+footer {
+    background-color:rgb(156, 141, 189);
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    padding: 30px;
+}
+
+#extra-links {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-list-item {
+    width: 25%;
+}
