@@ -1,4 +1,6 @@
 :root {
+
+
     /* COLORS */
     /*Light mode colors */
     --light-background: #7C9DB1;
@@ -9,8 +11,38 @@
     --dark-accent: #22465C;
     --dark-text: #7C9DB1;
 
-    /* Other */
 
+    /* current colors */
+    --cur-background: var(--light-background);
+    --cur-text: var(--light-text);
+    --cur-accent: var(--light-accent);
+    /* Other */
+}
+
+.dark-mode {
+    --cur-background: var(--dark-background);
+    --cur-text: var(--dark-text);
+    --cur-accent: var(--dark-accent);
+}
+
+body {
+    background-color: var(--cur-background);
+    color: var(--cur-text);
+
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar {
@@ -19,7 +51,7 @@
     left: 0;
     margin: 0;
     padding: 0;
-    background-color: var(--light-text);
+    background-color: var(--cur-accent);
     display: flex;
     overflow: hidden;
     /* flex-direction: row;
@@ -42,12 +74,16 @@
     width: 100px;
 }
 
+.navbar-settings {
+    width: 200px;
+}
+
 .nav-element:hover {
     background-color: red;
 }
 
 .logo {
-    background-color: var(--dark-text);
+    background-color: var(--cur-accent);
     width: 200px;
 
     display: flex;
