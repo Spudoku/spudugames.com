@@ -1,0 +1,73 @@
+:root {
+    /* COLORS */
+    /*Light mode colors */
+    --light-background: #7C9DB1;
+    --light-accent: #486E86;
+    --light-text: #0A2333;
+    /* Dark Mode colors  */
+    --dark-background: #0A2333;
+    --dark-accent: #22465C;
+    --dark-text: #7C9DB1;
+
+    /* Other */
+
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-text);
+    display: flex;
+    overflow: hidden;
+    /* flex-direction: row;
+    align-items: flex-start;
+    justify-content: left; */
+
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    border: 3px solid black;
+}
+
+.nav-element {
+    height: 100%;
+    border: 1px solid black;
+    z-index: 3;
+}
+
+.nav-other {
+    width: 100px;
+}
+
+.nav-element:hover {
+    background-color: red;
+}
+
+.logo {
+    background-color: var(--dark-text);
+    width: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Holds links to github, email */
+.footer-links {
+    width: 50%;
+    background-color: black;
+    height: 30px;
+    margin: auto;
+
+    position: sticky;
+    top: 300px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
