@@ -12,5 +12,5 @@
     height: 100%;
     border: 1px solid white;
     margin: 0;
-
+    background-color: var(--cur-accent);
 }

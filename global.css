@@ -16,6 +16,13 @@
     --cur-background: var(--light-background);
     --cur-text: var(--light-text);
     --cur-accent: var(--light-accent);
+
+
+    /* Text related */
+    --nav-font: Tahoma;
+    --header-font: Tahoma;
+    --main-font: Arial;
+
     /* Other */
 }
 
@@ -45,6 +52,15 @@ body {
     margin-right: auto;
 }
 
+.box {
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav stuff */
 .navbar {
     position: sticky;
     top: 0;
@@ -68,6 +84,7 @@ body {
     height: 100%;
     border: 1px solid black;
     z-index: 3;
+
 }
 
 .nav-other {
@@ -90,6 +107,14 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.nav-element>p {
+    color: var(--cur-text);
+    font-family: var(--nav-font);
+    text-align: center;
+    text-decoration: none;
+}
+
 
 /* Holds links to github, email */
 .footer-links {
