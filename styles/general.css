@@ -1,0 +1,119 @@
+/* Stylesheet created by Caleb Short */
+
+/* variables declaration */
+:root {
+    /* primary background for page */
+    --main-background: #437381;
+
+    /* other colors */
+
+    /* fonts */
+    --heading-font: "Georgia", sans-serif;
+    --heading-color: #000000;
+
+    --main-font: "Verdana", sans-serif;
+    --main-text-color: #000000;
+
+    --font-base-size: 16px;
+    --font-bold-weight: 700;
+
+    /* container coloration */
+    --container-background: #5c0aa8;
+    --sub-container-background: #7826c5;
+
+
+    /* setting root values */
+    font-size: var(--font-base-size);
+    background-color: var(--main-background);
+
+
+}
+
+/* Apply box-sizing to all elements for consistent box model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* 
+Size reference:
+h1: 2em 
+h2: 1.5em 
+h3: 1.17em 
+h4: 1em 
+h5: 0.83em 
+h6: 0.67em
+
+HEADER SETTINGS
+*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+    margin-bottom: 0.25em;
+}
+
+p,
+span {
+    font-family: var(--main-font);
+    margin-top: 0.25em;
+}
+
+
+
+/* primary container */
+.container {
+    background-color: var(--container-background);
+    padding: 20px;
+
+    margin: auto;
+    border-radius: 1em;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* div stuff! */
+.main-content {
+    max-width: 1200px;
+    padding: 10px;
+    min-height: 300px;
+}
+
+/* intended for containers within containers */
+.sub-container {
+    background-color: var(--sub-container-background);
+    padding: 10px;
+    border-radius: 1em;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+
+/* make any container invisible */
+.invisible {
+    background-color: transparent;
+    border: none;
+}
+
+.invisible-with-border {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 1em;
+}
+
+/* make a container use a row display instead of column */
+.flex-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* navigation items */
