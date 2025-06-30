@@ -27,7 +27,7 @@
 
 
     /* nav-area stuff */
-    --navarea-height: 4em;
+    --navarea-height: 50px;
 
     /* setting root values */
     font-size: var(--font-base-size);
@@ -106,19 +106,6 @@ span {
     flex-direction: column;
 }
 
-
-/* make any container invisible */
-.invisible {
-    background-color: transparent;
-    border: none;
-}
-
-.invisible-with-border {
-    background-color: transparent;
-    border: 2px solid black;
-    border-radius: 1em;
-}
-
 /* make a container use a row display instead of column */
 .flex-row {
     flex-direction: row;
@@ -131,6 +118,8 @@ span {
     padding: 0;
     width: 100%;
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
 }
 
 #logo {
@@ -142,11 +131,57 @@ span {
 #nav-area {
     flex-grow: 1;
     height: var(--navarea-height);
+    padding: 0;
+}
+
+.nav-item {
+    height: 100%;
+    flex-grow: 1;
+    border: 2px solid black;
+    border-radius: 1em;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
 
 #darkmode {
     height: var(--navarea-height);
     width: var(--navarea-height);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
+#darkmode-label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+/* extra 'tags' */
+.unselectable {
+    /* Credit to https: //stackoverflow.com/questions/6900124/how-to-make-certain-text-not-selectable-with-css */
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+/* make any container invisible */
+.invisible {
+    background-color: transparent;
+    border: none;
+}
+
+.invisible-with-border {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 1em;
 }

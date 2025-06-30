@@ -15,10 +15,21 @@
         <!-- navigation area -->
         <div class="container flex-row invisible" id="nav-row">
             <div class="container" id="logo"></div>
-            <div class="container" id="nav-area">
+            <div class="container flex-row" id="nav-area">
                 <!-- TODO: add navigable links here -->
+                <div class="nav-item">
+                    <p class="unselectable">Games</p>
+                </div>
+                <div class="nav-item">
+                    <p class="unselectable">Blog</p>
+                </div>
+                <div class="nav-item">
+                    <p class="unselectable">About</p>
+                </div>
             </div>
-            <div class="container" id="darkmode"></div>
+            <div class="container" id="darkmode">
+                <p class="unselectable" id="darkmode-label">Dark</p>
+            </div>
         </div>
 
         <div class="container" id="homepage">
@@ -37,6 +48,6 @@
     </div>
 </body>
 
-<script src="scripts/darkmode.js"></script>
+<script src="scripts/navbar.js"></script>
 
 </html>
