@@ -1,9 +1,13 @@
 /* Stylesheet created by Caleb Short */
 
+/* TODO:
+    alternative coloring for light mode
+*/
+
 /* variables declaration */
 :root {
     /* primary background for page */
-    --main-background: #437381;
+    --main-background: #879ea3;
 
     /* other colors */
 
@@ -18,9 +22,12 @@
     --font-bold-weight: 700;
 
     /* container coloration */
-    --container-background: #5c0aa8;
-    --sub-container-background: #7826c5;
+    --container-background: #2f418f;
+    --sub-container-background: #3b5fa1;
 
+
+    /* nav-area stuff */
+    --navarea-height: 4em;
 
     /* setting root values */
     font-size: var(--font-base-size);
@@ -54,12 +61,21 @@ h3,
 h4 {
     font-family: var(--heading-font);
     margin-bottom: 0.25em;
+    color: var(--heading-color);
 }
 
 p,
 span {
     font-family: var(--main-font);
     margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    color: var(--main-text-color);
+}
+
+.signature {
+    font-family: 'Brush Script MT',
+        cursive;
+    font-size: 1.5em;
 }
 
 
@@ -67,34 +83,27 @@ span {
 /* primary container */
 .container {
     background-color: var(--container-background);
-    padding: 20px;
-
-    margin: auto;
     border-radius: 1em;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    padding: 5px;
 }
 
 /* div stuff! */
 .main-content {
     max-width: 1200px;
-    padding: 10px;
-    min-height: 300px;
+    margin: auto;
+
 }
 
 /* intended for containers within containers */
 .sub-container {
     background-color: var(--sub-container-background);
-    padding: 10px;
     border-radius: 1em;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
 }
 
 
@@ -114,6 +123,30 @@ span {
 .flex-row {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 /* navigation items */
+#nav-row {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#logo {
+    width: var(--navarea-height);
+    height: var(--navarea-height);
+
+}
+
+#nav-area {
+    flex-grow: 1;
+    height: var(--navarea-height);
+
+}
+
+#darkmode {
+    height: var(--navarea-height);
+    width: var(--navarea-height);
+
+}
