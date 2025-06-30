@@ -60,15 +60,18 @@ h2,
 h3,
 h4 {
     font-family: var(--heading-font);
-    margin-bottom: 0.25em;
+
+    margin-left: 10px;
+    margin-top: 0.25em;
+    margin-bottom: 0em;
     color: var(--heading-color);
 }
 
 p,
 span {
     font-family: var(--main-font);
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
+    margin-left: 10px;
+    margin-top: 0.15em;
     color: var(--main-text-color);
 }
 
@@ -94,7 +97,7 @@ span {
 .main-content {
     max-width: 1200px;
     margin: auto;
-
+    padding: 5px;
 }
 
 /* intended for containers within containers */
@@ -163,6 +166,7 @@ span {
 
 #darkmode-label {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
 }
 
 
@@ -190,4 +194,9 @@ span {
     background-color: transparent;
     border: 2px solid black;
     border-radius: 1em;
+}
+
+a {
+    text-decoration: none;
+
 }

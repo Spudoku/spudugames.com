@@ -25,8 +25,10 @@ const darkModeButton = document.getElementById("darkmode");
 
 const darkModeLabel = document.getElementById("darkmode-label");
 
+const navItems = document.querySelectorAll('.nav-item');
+
 // set darkmode to true
-let isDarkMode = false;
+let isDarkMode = !(localStorage.getItem("isDarkMode") === "true");
 toggleDarkMode();
 
 darkModeButton.addEventListener("click", () => {
@@ -52,11 +54,16 @@ function toggleDarkMode() {
         r.style.setProperty('--sub-container-background', subContainerBackground);
         darkModeLabel.textContent = "Light";
     }
+
+    // store current state in storage
+    localStorage.setItem("isDarkMode", isDarkMode);
+
+    navItems.forEach(item => { onMouseLeave(item) });
 }
 
 // ====== Navbar hovering functionality ======
 const navbar = document.getElementById("nav-area");
-const navItems = document.querySelectorAll('.nav-item');
+
 navItems.forEach(item => {
     item.addEventListener("mouseenter", () => { onMouseEnter(item) })
     item.addEventListener("mouseleave", () => { onMouseLeave(item) })
