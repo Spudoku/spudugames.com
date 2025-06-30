@@ -15,8 +15,8 @@ let mainTextColorDark = "#bebebe";
 let containerBackground = "#9FB3DB";
 let containerBackgroundDark = "#2f418f";
 
-let subContainerBackground = "#9FB3DB";
-let subContainerBackgroundDark = "#2f418f";
+let subContainerBackground = "#dae2f1";
+let subContainerBackgroundDark = "#3b5fa1";
 
 // CSS variable references
 var r = document.querySelector(':root');
@@ -56,16 +56,37 @@ function toggleDarkMode() {
 
 // ====== Navbar hovering functionality ======
 const navbar = document.getElementById("nav-area");
+const navItems = document.querySelectorAll('.nav-item');
+navItems.forEach(item => {
+    item.addEventListener("mouseenter", () => { onMouseEnter(item) })
+    item.addEventListener("mouseleave", () => { onMouseLeave(item) })
+})
 
-navbar.addEventListener("mouseenter", (event) => { onMouseEnter(event.target) })
-navbar.addEventListener("mouseleave", (event) => { onMouseLeave(event.target) })
 
-function onMouseEnter(target) {
-    console.log(target);
-    target.style.backgroundColor = 'red';
+function onMouseEnter(item) {
+
+    if (isDarkMode) {
+        // show bright
+        item.style.backgroundColor = subContainerBackground;
+        item.style.color = mainTextColor;
+    } else {
+        // show not bright
+        item.style.backgroundColor = subContainerBackgroundDark;
+        item.style.color = mainTextColorDark;
+    }
 }
 
-function onMouseLeave(target) {
-    console.log(target);
-    target.style.backgroundColor = 'blue';
+function onMouseLeave(item) {
+
+    if (isDarkMode) {
+        // show bright
+        // show not bright
+        item.style.backgroundColor = subContainerBackgroundDark;
+        item.style.color = mainTextColorDark;
+    } else {
+
+
+        item.style.backgroundColor = subContainerBackground;
+        item.style.color = mainTextColor;
+    }
 }

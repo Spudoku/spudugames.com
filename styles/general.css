@@ -143,8 +143,14 @@ span {
     text-align: center;
     align-items: center;
     justify-content: center;
+    background-color: var(--sub-container-background);
 
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    font-size: 1.25em;
+    font-weight: 900;
 }
+
 
 #darkmode {
     height: var(--navarea-height);
