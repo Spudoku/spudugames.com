@@ -16,7 +16,8 @@ let containerBackground = "#9FB3DB";
 let containerBackgroundDark = "#2f418f";
 
 let subContainerBackground = "#dae2f1";
-let subContainerBackgroundDark = "#3b5fa1";
+let subContainerBackgroundDark = "#314d81";
+
 
 // CSS variable references
 var r = document.querySelector(':root');

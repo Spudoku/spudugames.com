@@ -200,3 +200,34 @@ a {
     text-decoration: none;
 
 }
+
+/* ====== Blog stuff ======= */
+.blog-entry {
+    /* basic formatting */
+    width: 100%;
+    min-height: 100px;
+    background-color: var(--sub-container-background);
+    border: 2px solid black;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-meta {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.blog-content {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-content>img {
+    max-width: 80%;
+}
