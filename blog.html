@@ -35,13 +35,46 @@
             </div>
         </div>
 
+        <!-- choosing between blogs -->
+        <div class="container">
+            <div class="sub-container flex-row invisible">
+                <!-- select ALL blogs -->
+                <div class="nav-item unselectable blog-nav" data-blog-selector="all" id="blog-select-all">All blogs
+                </div>
+                <div class="nav-item unselectable blog-nav" data-blog-selector="games" id="blog-select-games">Game
+                    Discussions</div>
+                <div class="nav-item unselectable blog-nav" data-blog-selector="author-update"
+                    id="blog-select-author-update">Author Updates</div>
+                <div class="nav-item unselectable blog-nav" data-blog-selector="brain-leak" id="blog-select-brain-leak">
+                    Brain Leaks</div>
+
+            </div>
+            <!-- select sorting option -->
+            <div class="sub-container flex-row invisible">
+                <label for="blog-sort-options">Sort by</label>
+                <select id="blog-sort-options">
+                    <option selected>Newest</option>
+                    <option>Oldest</option>
+                    <option>Random</option>
+                </select>
+                <p>Selected category: All Blogs</p>
+            </div>
+
+        </div>
+
+
         <!-- container for blog posts -->
+        <!-- find template -->
         <div class="container blog-list" id="blog-list">
-            <!-- template for blog entry -->
-            <div class="blog-entry">
+            <!--  -->
+            <div class="blog-entry" data-date="2025-07-01" data-category="author-update">
                 <div class="blog-meta container">
-                    <h1>Help I'm Stuck In A Skull</h1>
-                    <p>July 1st, 2025</p>
+                    <h1 class="blog-meta-title">Help I'm Stuck In A Skull</h1>
+
+                    <div class="sub-container blog-meta-info">
+                        <!-- <p class="blog-meta-text">July 1st, 2025</p>
+                        <p class="blog-meta-text">Author Update</p> -->
+                    </div>
                 </div>
                 <div class="blog-content invisible">
                     <p>My brain wants to be free from the cramped cranial crevasse in which it resides. I honestly can't
@@ -50,7 +83,11 @@
                         src="data:image/jpeg;base64,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">
                 </div>
             </div>
+
         </div>
+
+
+
 
         <!-- TODO: some kind of footer? -->
         <div class="container" id="footer">
@@ -60,5 +97,6 @@
 </body>
 
 <script src="scripts/navbar.js"></script>
+<script src="scripts/blog.js"></script>
 
 </html>

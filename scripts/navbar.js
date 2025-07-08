@@ -1,5 +1,6 @@
 // This script provides all functionality for the navbar, including
 // darkmode, mouse hovering over certain elements, etc.
+// not to be confused with the similar functionaility in the Blog site.
 
 // ====== darkmode implementation ======
 // Coloration variables

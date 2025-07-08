@@ -68,12 +68,16 @@ h4 {
 }
 
 p,
-span {
+span,
+label,
+legend {
     font-family: var(--main-font);
-    margin-left: 10px;
+    margin: 5px;
     margin-top: 0.15em;
     color: var(--main-text-color);
 }
+
+
 
 .signature {
     font-family: 'Brush Script MT',
@@ -107,6 +111,7 @@ span {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
+    padding: 2px;
 }
 
 /* make a container use a row display instead of column */
@@ -114,6 +119,7 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+
 }
 
 /* navigation items */
@@ -139,7 +145,7 @@ span {
 
 .nav-item {
     height: 100%;
-    flex-grow: 1;
+    flex: 1;
     border: 2px solid black;
     border-radius: 1em;
     display: flex;
@@ -201,7 +207,11 @@ a {
 
 }
 
+select {}
+
 /* ====== Blog stuff ======= */
+
+
 .blog-entry {
     /* basic formatting */
     width: 100%;
@@ -230,4 +240,23 @@ a {
 
 .blog-content>img {
     max-width: 80%;
+}
+
+/* for p elements */
+.blog-meta-text {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Different categories */
+.author-update {
+    color: red;
+}
+
+.games {
+    color: purple
+}
+
+.brain-leaks {
+    color: green;
 }
