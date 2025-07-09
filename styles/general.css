@@ -263,3 +263,20 @@ a {
 .brain-leak {
     color: green;
 }
+
+/* Games Stuff */
+
+
+.game-summary {
+    width: 25%;
+    background-color: var(--container-background);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-summary>img {
+    width: 90%;
+    height: calc(width);
+}

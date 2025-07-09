@@ -1,4 +1,3 @@
-// TODO: somehow highlight selected category button
 
 const blogSortSelect = document.getElementById("blog-sort-options");
 
