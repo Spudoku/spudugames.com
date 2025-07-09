@@ -1,3 +1,5 @@
+// TODO: somehow highlight selected category button
+
 const blogSortSelect = document.getElementById("blog-sort-options");
 
 const blogContainer = document.getElementById("blog-list");
@@ -66,6 +68,7 @@ function sortBlogs(sortBy, entries) {
         });
     } else {
         // random sort
+        blogEntries = shuffle(blogEntries);
     }
     blogContainer.innerHTML = "";
     blogEntries.forEach(item => {
@@ -115,7 +118,40 @@ function getBlogEntries() {
     // 3. add category of blog post to p elements as classes
     let entries = Array.from(blogContainer.querySelectorAll(".blog-entry"))
     entries.forEach(item => {
+        let blogMetaInfo = item.querySelector(".blog-meta-info");
+        blogMetaInfo.innerHTML += `<p class="blog-meta-text">${item.dataset.date}</p>`;
 
+        // Insert a p element with author category and class
+        switch (item.dataset.category) {
+            case "games":
+                blogMetaInfo.innerHTML += `<p class="blog-meta-text games">Games</p>`;
+                break;
+            case "author-update":
+                blogMetaInfo.innerHTML += `<p class="blog-meta-text author-update">Author Update</p>`;
+                break;
+            case "brain-leak":
+                blogMetaInfo.innerHTML += `<p class="blog-meta-text brain-leak">Brain Leak</p>`;
+                break;
+            default:
+                break;
+        }
     });
     return entries;
+}
+
+// shuffle an array in-place using the Fisher-Yates Shuffle
+// code based off of https://www.geeksforgeeks.org/javascript/how-to-shuffle-an-array-using-javascript/
+function shuffle(array) {
+    console.log("shuffling array!");
+    for (let i = array.length - 1; i > 0; i--) {
+        // Generate Random index
+        const j = Math.floor(Math.random() * (i + 1));
+
+        // swap elements at indices i and j
+        const temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+
+    }
+    return array;
 }

@@ -1,13 +1,23 @@
 Date format: ISO (year-month-day)
 Current blog categories: all (select from categories), games, author-update, brain-leak
 
+TODO when new blog post is created:
+1. Record date of creation and category ing blog-entry
+2. write title in blog-meta>h1
+3. add content to blog-content div
 
-            <div class="blog-entry" data-date="2025-07-01" data-category="author-update">
+
+            <!-- Begin blog entry -->
+            <!-- EDIT data-date and data-category -->
+            <div class="blog-entry" data-date="" data-category="">
                 <div class="blog-meta container">
-                    <h1>Help I'm Stuck In A Skull</h1>
-                    <p>July 1st, 2025</p>
+                    <h1></h1>
+                    <!-- DO NOT EDIT blog-meta-info-->
+                    <div class="sub-container blog-meta-info"></div>
                 </div>
+                <!-- EDIT blog-content  -->
                 <div class="blog-content invisible">
-                    
+
                 </div>
             </div>
+            <!-- End blog entry -->
