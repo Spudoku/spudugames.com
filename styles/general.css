@@ -136,13 +136,14 @@ a {
 #logo {
     width: var(--navarea-height);
     height: var(--navarea-height);
-
+    margin: 0;
 }
 
 #nav-area {
     flex-grow: 1;
     height: var(--navarea-height);
     padding: 0;
+    margin: 5px;
 }
 
 .nav-item {
@@ -160,6 +161,7 @@ a {
     color: var(--main-text-color);
     font-size: 1.25em;
     font-weight: 900;
+    margin: 0;
 }
 
 
