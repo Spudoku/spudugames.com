@@ -1,0 +1,58 @@
+Pi documentation
+https://www.raspberrypi.com/documentation/computers
+
+
+
+Security Audits
+https://pidora.ca/transform-your-raspberry-pi-into-a-fortress-essential-security-hardening-steps/
+
+https://raspberrypi-guide.github.io/other/Improve-raspberry-pi-security
+
+https://github.com/iotJumpway/RPI-Examples/blob/master/_DOCS/6-Secure-Nginx-Server-For-Motion.md
+
+
+
+Resource Monitoring:
+
+Search YouTube for "Raspberry Pi htop" or "Raspberry Pi system monitoring" for video tutorials on tools like htop and nmon.
+ (Hard to link a single definitive text guide here, as visual guides are often better for this.)
+
+Log File Management
+http://nginx.org/en/docs/beginners_guide.html
+
+https://www.digitalocean.com/community/tutorials/how-to-manage-log-files-with-logrotate-on-ubuntu-20-04
+
+https://www.digitalocean.com/community/tutorials/how-to-manage-log-files-with-logrotate-on-ubuntu-20-04
+
+
+
+Dynamic DNS Client Maintenence
+https://www.kevsrobots.com/blog/dynamic-dns.html
+
+https://www.dynu.com/DynamicDNS/IPUpdateClient/RaspberryPi-Dynamic-DNS
+
+
+
+General Website Maintenence
+Backups
+https://www.crazydomains.com.au/learn/website-backup-strategies-protecting-your-data-in-web-hosting/
+
+https://onenine.com/best-practices-for-website-backup-strategies/
+
+
+SSL Certificate Removal
+https://certbot.eff.org/instructions?ws=nginx&os=snap
+
+
+
+Performance Optimization
+https://www.cloudflare.com/learning/performance/speed-up-a-website/
+
+https://www.shopify.com/enterprise/blog/web-performance-optimization
+
+
+
+Port Forwarding
+https://us.norton.com/blog/how-to/how-to-port-forward
+
+https://support.source-elements.com/source-elements/step-by-step-port-forwarding-guide
