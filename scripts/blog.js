@@ -49,7 +49,7 @@ blogSortSelect.addEventListener("change", () => {
 });
 
 function sortBlogs(sortBy, entries) {
-    console.log(sortBy + "; " + entries);
+
     if (sortBy === "Newest") {
         // sort by most recent
         entries.sort((a, b) => {
@@ -66,13 +66,17 @@ function sortBlogs(sortBy, entries) {
 
         });
     } else {
-        // random sort
         blogEntries = shuffle(blogEntries);
     }
+
+    // clear blogContainer
     blogContainer.innerHTML = "";
-    blogEntries.forEach(item => {
-        blogContainer.appendChild(item);
-    });
+
+    // re-append blog entry elements
+    for (let i = 0; i < blogEntries.length; i++) {
+        blogContainer.appendChild(blogEntries[i]);
+    }
+
 
     displayCategory(selectedCategory);
 }
@@ -80,7 +84,6 @@ function sortBlogs(sortBy, entries) {
 
 
 function displayCategory(category) {
-    console.log(category);
     if (category === "all") {
         blogEntries.forEach(item => {
             item.style.display = "flex";
@@ -88,14 +91,14 @@ function displayCategory(category) {
     } else {
         // hide all blog entries except the ones that are supposed to be visible
         let visible = blogEntries.filter((item) => {
-            console.log(item);
             return item.dataset.category === category;
         });
+
         let hidden = blogEntries.filter((item) => {
-            console.log(item);
             return item.dataset.category !== category;
         });
 
+        // change display settings of each blog element
         visible.forEach(item => {
             item.style.display = 'flex';
         });
@@ -104,17 +107,12 @@ function displayCategory(category) {
             item.style.display = 'none';
         })
 
-        console.log(visible);
-        console.log(hidden);
     }
 }
 
 
+// Collect and process each blog entry element
 function getBlogEntries() {
-    // TODO: add meta stuff to each blog entry:
-    // 1. get blog-meta container within each element
-    // 2. add subcontainer with 2 p elements
-    // 3. add category of blog post to p elements as classes
     let entries = Array.from(blogContainer.querySelectorAll(".blog-entry"))
     entries.forEach(item => {
         let blogMetaInfo = item.querySelector(".blog-meta-info");
@@ -141,7 +139,6 @@ function getBlogEntries() {
 // shuffle an array in-place using the Fisher-Yates Shuffle
 // code based off of https://www.geeksforgeeks.org/javascript/how-to-shuffle-an-array-using-javascript/
 function shuffle(array) {
-    console.log("shuffling array!");
     for (let i = array.length - 1; i > 0; i--) {
         // Generate Random index
         const j = Math.floor(Math.random() * (i + 1));
