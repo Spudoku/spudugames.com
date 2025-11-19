@@ -68,11 +68,9 @@ h4 {
 }
 
 p,
-span,
 label,
 legend,
-li,
-a {
+li {
     font-family: var(--main-font);
     margin: 10px;
     margin-top: 0.15em;
