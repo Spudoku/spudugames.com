@@ -79,6 +79,11 @@ a {
     color: var(--main-text-color);
 }
 
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 
 .signature {
