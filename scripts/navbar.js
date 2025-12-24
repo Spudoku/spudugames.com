@@ -19,6 +19,9 @@ let containerBackgroundDark = "#2f418f";
 let subContainerBackground = "#dae2f1";
 let subContainerBackgroundDark = "#314d81";
 
+let linkTextColor = "#353535ff";
+let linkTextColorDark = "#beacacff";
+
 
 // CSS variable references
 var r = document.querySelector(':root');
@@ -47,6 +50,7 @@ function toggleDarkMode() {
         r.style.setProperty('--main-text-color', mainTextColorDark);
         r.style.setProperty('--container-background', containerBackgroundDark);
         r.style.setProperty('--sub-container-background', subContainerBackgroundDark);
+        r.style.setProperty('--link-text-color', linkTextColorDark);
         darkModeLabel.textContent = "Dark";
     } else {
         r.style.setProperty('--main-background', mainBackground);
@@ -54,6 +58,7 @@ function toggleDarkMode() {
         r.style.setProperty('--main-text-color', mainTextColor);
         r.style.setProperty('--container-background', containerBackground);
         r.style.setProperty('--sub-container-background', subContainerBackground);
+        r.style.setProperty('--link-text-color', linkTextColor);
         darkModeLabel.textContent = "Light";
     }
 
