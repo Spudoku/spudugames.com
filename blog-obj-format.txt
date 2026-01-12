@@ -1,0 +1,14 @@
+{
+    data-category="",
+    data-date="".
+    html=""
+}
+
+data-category:
+    one of: games, author-update, brain-leak
+
+data-date: 
+    date the blog was created, in form of ISO (year-month-day)
+
+html:
+    html elements to be inserted as the content of the blog element

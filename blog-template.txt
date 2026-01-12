@@ -21,3 +21,4 @@ TODO when new blog post is created:
                 </div>
             </div>
             <!-- End blog entry -->
+

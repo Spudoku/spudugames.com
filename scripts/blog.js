@@ -121,7 +121,7 @@ function getBlogEntries() {
         // Insert a p element with author category and class
         switch (item.dataset.category) {
             case "games":
-                blogMetaInfo.innerHTML += `<p class="blog-meta-text games">Games</p>`;
+                blogMetaInfo.innerHTML += `<p class="blog-meta-text games">Game Discussions</p>`;
                 break;
             case "author-update":
                 blogMetaInfo.innerHTML += `<p class="blog-meta-text author-update">Author Update</p>`;
