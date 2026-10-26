@@ -3,305 +3,335 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Spudugames</title>
-    <link rel="stylesheet" href="styles/general.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog | Spudugames</title>
+	<link rel="stylesheet" href="styles/general.css">
 
 </head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXN4QDL536"></script>
 <script>
-    dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+	dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
 
-    gtag('config', 'G-DXN4QDL536');
+	gtag('config', 'G-DXN4QDL536');
 </script>
 
 <body>
-    <!-- treat this as the "root" of most content on pages -->
-    <div class="container main-content invisible-with-border">
-        <!-- navigation area -->
-        <div class="container flex-row invisible" id="nav-row">
-            <a href="index.html" class="container" id="logo"></a>
+	<!-- treat this as the "root" of most content on pages -->
+	<!-- TODO: change format of blogs on this website ong -->
+	<div class="container main-content invisible-with-border">
+		<!-- navigation area -->
+		<div class="container flex-row invisible" id="nav-row">
+			<a href="index.html" class="container" id="logo"></a>
 
-            <!-- navbar -->
-            <div class="container flex-row invisible" id="nav-area">
-                <!-- TODO: add navigable links here -->
-                <a href="games.html" class="nav-item unselectable">
-                    Games
-                </a>
-                <a class="nav-item unselectable" href="blog.html">
-                    Blog
-                </a>
-                <a class="nav-item unselectable" href="about.html">
-                    About
-                </a>
-            </div>
-            <div class="container" id="darkmode">
-                <p class="unselectable" id="darkmode-label">Dark</p>
-            </div>
-        </div>
+			<!-- navbar -->
+			<div class="container flex-row invisible" id="nav-area">
+				<!-- TODO: add navigable links here -->
+				<a href="games.html" class="nav-item unselectable">
+					Games
+				</a>
+				<a class="nav-item unselectable" href="blog.html">
+					Blog
+				</a>
+				<a class="nav-item unselectable" href="about.html">
+					About
+				</a>
+			</div>
+			<div class="container" id="darkmode">
+				<p class="unselectable" id="darkmode-label">Dark</p>
+			</div>
+		</div>
 
-        <!-- choosing between blogs -->
-        <div class="container">
-            <div class="sub-container flex-row invisible">
-                <!-- select ALL blogs -->
-                <div class="nav-item unselectable blog-nav" data-blog-selector="all" id="blog-select-all">All blogs
-                </div>
-                <div class="nav-item unselectable blog-nav" data-blog-selector="games" id="blog-select-games">Game
-                    Discussions</div>
-                <div class="nav-item unselectable blog-nav" data-blog-selector="author-update"
-                    id="blog-select-author-update">Author Updates</div>
-                <div class="nav-item unselectable blog-nav" data-blog-selector="brain-leak" id="blog-select-brain-leak">
-                    Brain Leaks</div>
+		<!-- choosing between blogs -->
+		<div class="container">
+			<div class="sub-container flex-row invisible">
+				<!-- select ALL blogs -->
+				<div class="nav-item unselectable blog-nav" data-blog-selector="all" id="blog-select-all">All blogs
+				</div>
+				<div class="nav-item unselectable blog-nav" data-blog-selector="games" id="blog-select-games">Game
+					Discussions</div>
+				<div class="nav-item unselectable blog-nav" data-blog-selector="author-update"
+					id="blog-select-author-update">Author Updates</div>
+				<div class="nav-item unselectable blog-nav" data-blog-selector="brain-leak" id="blog-select-brain-leak">
+					Brain Leaks</div>
 
-            </div>
-            <!-- select sorting option -->
-            <div class="sub-container flex-row invisible">
-                <label for="blog-sort-options">Sort by</label>
-                <select id="blog-sort-options">
-                    <option selected>Newest</option>
-                    <option>Oldest</option>
-                    <option>Random</option>
-                </select>
-                <!-- <p>Selected category: All Blogs</p> -->
-            </div>
+			</div>
+			<!-- select sorting option -->
+			<div class="sub-container flex-row invisible">
+				<label for="blog-sort-options">Sort by</label>
+				<select id="blog-sort-options">
+					<option selected>Newest</option>
+					<option>Oldest</option>
+					<option>Random</option>
+				</select>
+				<!-- <p>Selected category: All Blogs</p> -->
+			</div>
 
-        </div>
-
-
-        <!-- container for blog posts -->
-
-        <div class="container blog-list" id="blog-list">
-            <!--  -->
-            <!-- Begin blog entry -->
-            <!-- EDIT data-date and data-category -->
-            <div class="blog-entry" data-date="2025-11-18" data-category="author-update">
-                <div class="blog-meta container">
-                    <h1>Welcome to Spudugames!</h1>
-                    <!-- DO NOT EDIT blog-meta-info-->
-                    <div class="sub-container blog-meta-info"></div>
-                </div>
-                <!-- EDIT blog-content  -->
-                <div class="blog-content invisible">
-                    <p>I finally got around to buying the domain name and working on this blog. Here's to a new
-                        beginning!</p>
-                </div>
-            </div>
-            <!-- End blog entry -->
+		</div>
 
 
-            <!-- Begin blog entry -->
-            <!-- EDIT data-date and data-category -->
-            <div class="blog-entry" data-date="2025-11-19" data-category="brain-leak">
-                <div class="blog-meta container">
-                    <h1>Literally super tired right now</h1>
-                    <!-- DO NOT EDIT blog-meta-info-->
-                    <div class="sub-container blog-meta-info"></div>
-                </div>
-                <!-- EDIT blog-content  -->
-                <div class="blog-content invisible">
-                    <p>Not to complain but...</p>
-                    <p>Why does the world have to be so damn exhausting? Why can't I just sleep for three days straight
-                        and get my shit done later?</p>
-                </div>
-            </div>
-            <!-- End blog entry -->
+		<!-- container for blog posts -->
 
-            <!-- Begin blog entry -->
-            <!-- EDIT data-date and data-category -->
-            <div class="blog-entry" data-date="2025-12-16" data-category="author-update">
-                <div class="blog-meta container">
-                    <h1>I'm on break!</h1>
-                    <!-- DO NOT EDIT blog-meta-info-->
-                    <div class="sub-container blog-meta-info"></div>
-                </div>
-                <!-- EDIT blog-content  -->
-                <div class="blog-content invisible">
-                    <p>I've been on break for a week now. It's odd not having the burden of academics or a j*b on my
-                        shoulders. I also feel like any rest or fun I have is just
-                        squandering an opportunity.
-                    </p>
-                    <p>Planted some lettuce that I'll grow hydroponically. Also my home-germinated pomegrantes are
-                        happy. Perhaps I'll upload pictures of my setup here.</p>
-                </div>
-            </div>
-            <!-- End blog entry -->
-
-            <!-- Begin blog entry -->
-            <!-- EDIT data-date and data-category -->
-            <div class="blog-entry" data-date="2026-1-11" data-category="games">
-                <div class="blog-meta container">
-                    <h1>Cobalt: An Introduction</h1>
-                    <!-- DO NOT EDIT blog-meta-info-->
-                    <div class="sub-container blog-meta-info">
-                    </div>
-                </div>
-                <!-- EDIT blog-content  -->
-                <div class="blog-content invisible">
-                    <p>Cobalt is a masterpiece and, I'd wager, a seriously strong representative for the 2-D platformer
-                        shooter. This and future posts should demonstrate this.
-                    </p>
-                    <p>
-                        The Achilles' Heel to Cobalt's success (besides marketing) has to be how <i>fiendishly hard</i>
-                        the game is to pick up. As a younger gamer,
-                        I avoided the game while I watched my brother fumble around with the controls. The tutorial,
-                        even the advanced tutorial, doesn't encapsulate the whole depth
-                        of the mechanics. Seriously, it takes hundreds of hours to get anywhere near 'good'.
-                    </p>
-                    <p>Even as a single player game (I've never been able to get an online match in any gamemode),
-                        Cobalt has plenty of options. A relatively satisfying campaign, combat and speed challenges, and
-                        several other
-                        gamemodes. Survival mode, being my favorite, will get its own lengthy post.
-                    </p>
-                    <p>
-                        While the unusual control scheme may drive one away, I will hopefully demonstrate why Cobalt is
-                        an underappreciated masterpiece.
-                    </p>
-                </div>
-            </div>
-            <!-- End blog entry -->
-
-            <!-- Begin blog entry -->
-            <!-- EDIT data-date and data-category -->
-            <div class="blog-entry" data-date="2026-2-10" data-category="games">
-                <div class="blog-meta container">
-                    <h1>Deadlock: First Impressions</h1>
-                    <!-- DO NOT EDIT blog-meta-info-->
-                    <div class="sub-container blog-meta-info"></div>
-                </div>
-                <!-- EDIT blog-content  -->
-                <div class="blog-content invisible">
-                    <p>A friend recently invited me to the Deadlock Playtest a few weeks ago. I've been obsessed ever
-                        since.</p>
-                    <p>This isn't exactly a review so I won't bother educating you about the game too much. So, in
-                        short, Deadlock is a
-                        third-person Shooter/MOBA where you slaughter robot-like things, weird abominations and of
-                        course other players by the hundreds in order to summon a god.
-                    </p>
-
-                    <p>This game tickles a lot of what I like doing in games, such as strategizing, optimization and
-                        shooting people in the face.
-                        Therefore I gravitate towards characters (heroes) that do those things well. Examples
-                        (currently)
-                        include Drifter, Vindicta, Abrams and Ivy. Keep in mind that my list isn't comprehensive to what
-                        I like simply because
-                        I only have 40 or so hours in the game (yes, 'only' 40 hours) and I'm kind of dogshit at the
-                        game still.
-                    </p>
-
-                    <p>
-                        I found it really confusing at first how less obvious mechanics such as Spirit Power work, but a
-                        little understanding
-                        has gone a long way. Playing the tutorial is not enough to get a firm understanding on
-                        everything. Outside research is highly recommended.
-                        I guess that goes to show that Deadlock is designed to be one of those games that are highly
-                        competitive (it's a MOBA after all).
-                    </p>
-
-                    <p>
-                        Many of the heroes are already pretty goddamn iconic, from the sophisticated evil of Seven,
-                        Viscous' Cube, REM's childlike whimsy... it's incredible. Valve is of course adept at creating
-                        characters
-                        like the TF2 mercs (some of my favorite characters in fiction), various Half Life characters and
-                        even the silent protagonists of
-                        Portal and Half Life. So its no surprise that Valve cooked with Deadlock.
-                    </p>
-
-                    <p>
-                        What I'm concerned about for Deadlock's future is character bloat. There are currently about 38
-                        playable heroes (I don't remember if that includes the newest additions like Silver, Celeste and
-                        Apollo).
-                        That's already a lot for me to handle (skill issue I know). However, I don't want Deadlock to
-                        turn into another Brawl Stars.
-                    </p>
-
-                    <p>
-                        I used to play Brawl Stars a lot during my teenage years. During the first years following its
-                        released, I genuinely loved
-                        the game. But over time, as new brawlers and features were added, the game got cumbersome and
-                        less fun for someone like me who likes to know everything. It got clunky too, with gadgets and
-                        second star powers
-                        and other random garbage clogging the screen. (Actually, gadgets weren't too bad on their own).
-                    </p>
-
-                    <p>
-                        I don't want Deadlock to have so many heroes that it becomes difficult to remember all of their
-                        names and kits.
-                        Since the heroes are original characters, it doesn't work like a game like Super Smash Bros
-                        Ulitmate does. And, depending on how Deadlock will be monetized, feature bloat may become
-                        essential.
-                        Best case, it will simply be cosmetic items like outfits, hats (TF2!!!), taunts and so on. Worst
-                        case,
-                        pay-to-win like Brawl Stars. Thankfully, Valve has a track record of the former so I hope my
-                        concerns will be unwarranted.
-                    </p>
-
-                    <p>
-                        Deadlock is actually fun, like most Valve titles. I look forward to putting hundreds of hours
-                        into it, and I may
-                        report further to you here.
-                    </p>
-                </div>
-            </div>
-            <!-- End blog entry -->
+		<div class="container blog-list" id="blog-list">
+			<!--  -->
+			<!-- Begin blog entry -->
+			<!-- EDIT data-date and data-category -->
+			<div class="blog-entry" data-date="2025-11-18" data-category="author-update">
+				<div class="blog-meta container">
+					<h1>Welcome to Spudugames!</h1>
+					<!-- DO NOT EDIT blog-meta-info-->
+					<div class="sub-container blog-meta-info"></div>
+				</div>
+				<!-- EDIT blog-content  -->
+				<div class="blog-content invisible">
+					<p>I finally got around to buying the domain name and working on this blog. Here's to a new
+						beginning!</p>
+				</div>
+			</div>
+			<!-- End blog entry -->
 
 
-            <!-- Begin blog entry -->
-            <!-- EDIT data-date and data-category -->
-            <div class="blog-entry" data-date="2026-3-23" data-category="games">
-                <div class="blog-meta container">
-                    <h1>Cobalt: Rolling</h1>
-                    <!-- DO NOT EDIT blog-meta-info-->
-                    <div class="sub-container blog-meta-info"></div>
-                </div>
-                <!-- EDIT blog-content  -->
-                <div class="blog-content invisible">
+			<!-- Begin blog entry -->
+			<!-- EDIT data-date and data-category -->
+			<div class="blog-entry" data-date="2025-11-19" data-category="brain-leak">
+				<div class="blog-meta container">
+					<h1>Literally super tired right now</h1>
+					<!-- DO NOT EDIT blog-meta-info-->
+					<div class="sub-container blog-meta-info"></div>
+				</div>
+				<!-- EDIT blog-content  -->
+				<div class="blog-content invisible">
+					<p>Not to complain but...</p>
+					<p>Why does the world have to be so damn exhausting? Why can't I just sleep for three days straight
+						and get my shit done later?</p>
+				</div>
+			</div>
+			<!-- End blog entry -->
 
-                    <p>
-                        Rolling is the special 'gimmick' that Cobalt is more or less built around. Mastering it is an
-                        insanely important skill for
-                        any situation in-game.
+			<!-- Begin blog entry -->
+			<!-- EDIT data-date and data-category -->
+			<div class="blog-entry" data-date="2025-12-16" data-category="author-update">
+				<div class="blog-meta container">
+					<h1>I'm on break!</h1>
+					<!-- DO NOT EDIT blog-meta-info-->
+					<div class="sub-container blog-meta-info"></div>
+				</div>
+				<!-- EDIT blog-content  -->
+				<div class="blog-content invisible">
+					<p>I've been on break for a week now. It's odd not having the burden of academics or a j*b on my
+						shoulders. I also feel like any rest or fun I have is just
+						squandering an opportunity.
+					</p>
+					<p>Planted some lettuce that I'll grow hydroponically. Also my home-germinated pomegrantes are
+						happy. Perhaps I'll upload pictures of my setup here.</p>
+				</div>
+			</div>
+			<!-- End blog entry -->
 
-                    </p>
-                    <p>Rolling does many things, including:</p>
-                    <ol>
-                        <li>Deflects bullets (unless they hit your feet)</li>
-                        <li>Automatically aims your weapon for you</li>
-                        <li>Unlocks melee jumping potential</li>
-                        <li>Provides a burst of movement speed</li>
-                    </ol>
-                    <p>
-                        It definitely seems overpowered, especially since it takes a single key press to execute. And in
-                        some ways, it is, since in many ways the game is centered around rolling. Not mindlessly
-                        spamming roll, of course, but in using rolls effectively both defensively and offensively. You
-                        essentially must
-                        play with rolling in mind. Though now that I think of it, shooting is 'overpowered' too. So what
-                        I should say is that both rolling and shooting are fundamental to <i>Cobalt</i> gameplay.
-                    </p>
-                    <p>
-                        Tangent aside, rolling is above all a very <i>fun</i> part of the Cobalt gameplay loop,
-                        especially once you
-                        learn its potential and capitalize on it. Even in single player settings (I have never played
-                        <i>Cobalt</i> with or against other human players), rolling gives you so many options that you
-                        have to capitalize on in fractions of a second, hence a super satisfying timing component.
-                    </p>
-                </div>
-            </div>
-            <!-- End blog entry -->
-        </div>
-        <!-- End blog entry container -->
+			<!-- Begin blog entry -->
+			<!-- EDIT data-date and data-category -->
+			<div class="blog-entry" data-date="2026-1-11" data-category="games">
+				<div class="blog-meta container">
+					<h1>Cobalt: An Introduction</h1>
+					<!-- DO NOT EDIT blog-meta-info-->
+					<div class="sub-container blog-meta-info">
+					</div>
+				</div>
+				<!-- EDIT blog-content  -->
+				<div class="blog-content invisible">
+					<p>Cobalt is a masterpiece and, I'd wager, a seriously strong representative for the 2-D platformer
+						shooter. This and future posts should demonstrate this.
+					</p>
+					<p>
+						The Achilles' Heel to Cobalt's success (besides marketing) has to be how <i>fiendishly hard</i>
+						the game is to pick up. As a younger gamer,
+						I avoided the game while I watched my brother fumble around with the controls. The tutorial,
+						even the advanced tutorial, doesn't encapsulate the whole depth
+						of the mechanics. Seriously, it takes hundreds of hours to get anywhere near 'good'.
+					</p>
+					<p>Even as a single player game (I've never been able to get an online match in any gamemode),
+						Cobalt has plenty of options. A relatively satisfying campaign, combat and speed challenges, and
+						several other
+						gamemodes. Survival mode, being my favorite, will get its own lengthy post.
+					</p>
+					<p>
+						While the unusual control scheme may drive one away, I will hopefully demonstrate why Cobalt is
+						an underappreciated masterpiece.
+					</p>
+				</div>
+			</div>
+			<!-- End blog entry -->
+
+			<!-- Begin blog entry -->
+			<!-- EDIT data-date and data-category -->
+			<div class="blog-entry" data-date="2026-2-10" data-category="games">
+				<div class="blog-meta container">
+					<h1>Deadlock: First Impressions</h1>
+					<!-- DO NOT EDIT blog-meta-info-->
+					<div class="sub-container blog-meta-info"></div>
+				</div>
+				<!-- EDIT blog-content  -->
+				<div class="blog-content invisible">
+					<p>A friend recently invited me to the Deadlock Playtest a few weeks ago. I've been obsessed ever
+						since.</p>
+					<p>This isn't exactly a review so I won't bother educating you about the game too much. So, in
+						short, Deadlock is a
+						third-person Shooter/MOBA where you slaughter robot-like things, weird abominations and of
+						course other players by the hundreds in order to summon a god.
+					</p>
+
+					<p>This game tickles a lot of what I like doing in games, such as strategizing, optimization and
+						shooting people in the face.
+						Therefore I gravitate towards characters (heroes) that do those things well. Examples
+						(currently)
+						include Drifter, Vindicta, Abrams and Ivy. Keep in mind that my list isn't comprehensive to what
+						I like simply because
+						I only have 40 or so hours in the game (yes, 'only' 40 hours) and I'm kind of dogshit at the
+						game still.
+					</p>
+
+					<p>
+						I found it really confusing at first how less obvious mechanics such as Spirit Power work, but a
+						little understanding
+						has gone a long way. Playing the tutorial is not enough to get a firm understanding on
+						everything. Outside research is highly recommended.
+						I guess that goes to show that Deadlock is designed to be one of those games that are highly
+						competitive (it's a MOBA after all).
+					</p>
+
+					<p>
+						Many of the heroes are already pretty goddamn iconic, from the sophisticated evil of Seven,
+						Viscous' Cube, REM's childlike whimsy... it's incredible. Valve is of course adept at creating
+						characters
+						like the TF2 mercs (some of my favorite characters in fiction), various Half Life characters and
+						even the silent protagonists of
+						Portal and Half Life. So its no surprise that Valve cooked with Deadlock.
+					</p>
+
+					<p>
+						What I'm concerned about for Deadlock's future is character bloat. There are currently about 38
+						playable heroes (I don't remember if that includes the newest additions like Silver, Celeste and
+						Apollo).
+						That's already a lot for me to handle (skill issue I know). However, I don't want Deadlock to
+						turn into another Brawl Stars.
+					</p>
+
+					<p>
+						I used to play Brawl Stars a lot during my teenage years. During the first years following its
+						released, I genuinely loved
+						the game. But over time, as new brawlers and features were added, the game got cumbersome and
+						less fun for someone like me who likes to know everything. It got clunky too, with gadgets and
+						second star powers
+						and other random garbage clogging the screen. (Actually, gadgets weren't too bad on their own).
+					</p>
+
+					<p>
+						I don't want Deadlock to have so many heroes that it becomes difficult to remember all of their
+						names and kits.
+						Since the heroes are original characters, it doesn't work like a game like Super Smash Bros
+						Ulitmate does. And, depending on how Deadlock will be monetized, feature bloat may become
+						essential.
+						Best case, it will simply be cosmetic items like outfits, hats (TF2!!!), taunts and so on. Worst
+						case,
+						pay-to-win like Brawl Stars. Thankfully, Valve has a track record of the former so I hope my
+						concerns will be unwarranted.
+					</p>
+
+					<p>
+						Deadlock is actually fun, like most Valve titles. I look forward to putting hundreds of hours
+						into it, and I may
+						report further to you here.
+					</p>
+				</div>
+			</div>
+			<!-- End blog entry -->
+
+
+			<!-- Begin blog entry -->
+			<!-- EDIT data-date and data-category -->
+			<div class="blog-entry" data-date="2026-3-23" data-category="games">
+				<div class="blog-meta container">
+					<h1>Cobalt: Rolling</h1>
+					<!-- DO NOT EDIT blog-meta-info-->
+					<div class="sub-container blog-meta-info"></div>
+				</div>
+				<!-- EDIT blog-content  -->
+				<div class="blog-content invisible">
+
+					<p>
+						Rolling is the special 'gimmick' that Cobalt is more or less built around. Mastering it is an
+						insanely important skill for
+						any situation in-game.
+
+					</p>
+					<p>Rolling does many things, including:</p>
+					<ol>
+						<li>Deflects bullets (unless they hit your feet)</li>
+						<li>Automatically aims your weapon for you</li>
+						<li>Unlocks melee jumping potential</li>
+						<li>Provides a burst of movement speed</li>
+					</ol>
+					<p>
+						It definitely seems overpowered, especially since it takes a single key press to execute. And in
+						some ways, it is, since in many ways the game is centered around rolling. Not mindlessly
+						spamming roll, of course, but in using rolls effectively both defensively and offensively. You
+						essentially must
+						play with rolling in mind. Though now that I think of it, shooting is 'overpowered' too. So what
+						I should say is that both rolling and shooting are fundamental to <i>Cobalt</i> gameplay.
+					</p>
+					<p>
+						Tangent aside, rolling is above all a very <i>fun</i> part of the Cobalt gameplay loop,
+						especially once you
+						learn its potential and capitalize on it. Even in single player settings (I have never played
+						<i>Cobalt</i> with or against other human players), rolling gives you so many options that you
+						have to capitalize on in fractions of a second, hence a super satisfying timing component.
+					</p>
+				</div>
+			</div>
+			<!-- End blog entry -->
+
+			<!-- Begin blog entry -->
+			<!-- EDIT data-date and data-category -->
+			<div class="blog-entry" data-date="2026-9-8" data-category="games">
+				<div class="blog-meta container">
+					<h1>Deadlock Addiction</h1>
+					<!-- DO NOT EDIT blog-meta-info-->
+					<div class="sub-container blog-meta-info"></div>
+				</div>
+				<!-- EDIT blog-content  -->
+				<div class="blog-content invisible">
+					<p>
+						Lately I've been playing Deadlock in extremes. That is, uninstalling it and not touching it for
+						a few days, or
+						sinking four hours in a single night beating the shit out of people as Abrams (or getting my
+						shit rocked in the process).
+						It may be a skill issue, or an inherent design philosophy, but winning and losing as a
+						casual/low-elo player feels like
+						a slippery slope, where (barring profoundly stupid play by the winning team) you know that you
+						will win (or lose) with about 80% certainty (Pulling numbers out of my ass of course).
+					</p>
+					<p>
+						This, to me, is a problem. Sure, in other shooters where players don't increase in power as time
+						goes on, steamrolls
+						still happen, but they generally feel less reversible in a game like TF2 than in Deadlock.
+					</p>
+				</div>
+			</div>
+			<!-- End blog entry -->
+		</div>
+		<!-- End blog entry container -->
 
 
 
-        <!-- TODO: some kind of footer? -->
-        <div class="container" id="footer">
-            <p>Coming soon: some kind of footer</p>
-        </div>
-    </div>
+		<!-- TODO: some kind of footer? -->
+		<div class="container" id="footer">
+			<p>Coming soon: some kind of footer</p>
+		</div>
+	</div>
 </body>
 
 <script src="scripts/navbar.js"></script>
