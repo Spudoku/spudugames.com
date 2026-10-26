@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Game Title | Spudugames</title>
+	<link rel="stylesheet" href="/styles/general.css">
+	<!-- don't forget Unity styling! -->
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXN4QDL536"></script>
+<script>
+	dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-DXN4QDL536');
+</script>
+
+<body>
+	<!-- treat this as the "root" of most content on pages -->
+	<div class="container main-content invisible-with-border">
+		<!-- navigation area -->
+		<div class="container flex-row invisible" id="nav-row">
+			<a href="/home.html" class="container" id="logo"></a>
+
+			<!-- navbar -->
+			<div class="container flex-row invisible" id="nav-area">
+				<!-- TODO: add navigable links here -->
+				<a href="/games.html" class="nav-item unselectable">
+					Games
+				</a>
+				<a class="nav-item unselectable" href="/blog.html">
+					Blog
+				</a>
+				<a class="nav-item unselectable" href="/about.html">
+					About
+				</a>
+			</div>
+			<div class="container" id="darkmode">
+				<p class="unselectable" id="darkmode-label">Dark</p>
+			</div>
+		</div>
+
+		<div id="game-heading" class="container">
+			<h1>Title Text</h1>
+			<!-- short description -->
+			<p id="game-summary">Description</p>
+		</div>
+
+		<!-- put unity-container div here -->
+
+
+		<!-- put unity script element here -->
+
+		<!-- "footer" -->
+		<div class="container">
+
+		</div>
+
+		<!-- TODO: some kind of footer? -->
+		<div class="container" id="footer">
+			<p>Coming soon: some kind of footer</p>
+		</div>
+	</div>
+</body>
+
+<script src="/scripts/navbar.js"></script>
+
+</html>
