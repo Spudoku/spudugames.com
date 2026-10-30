@@ -133,6 +133,16 @@ ul {
 	padding: 2px;
 }
 
+.sub-container-row {
+	background-color: var(--sub-container-background);
+	border-radius: 1em;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: row;
+	padding: 2px;
+	flex-wrap: wrap;
+}
+
 /* make a container use a row display instead of column */
 .flex-row {
 	flex-direction: row;
